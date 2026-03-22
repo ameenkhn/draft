@@ -715,7 +715,10 @@ function isAcademicStudentMediaPath(path) {
   return lower.indexOf("assets/img/all-images/students/") === 0 && lower.indexOf("_files/") === -1;
 }
 
-var NON_ACADEMIC_STUDENT_MEDIA = {};
+var NON_ACADEMIC_STUDENT_MEDIA = {
+  "assets/img/all-images/students/media/website personal/students corner/rare case/aortic aneurysm causing backpain anna parit/dscn9835.jpg": true,
+  "assets/img/all-images/students/media/website personal/students corner/rare case/aortic aneurysm causing backpain anna parit/dscn9836 - copy.jpg": true
+};
 
 function isExcludedStudentMedia(path) {
   return !!NON_ACADEMIC_STUDENT_MEDIA[path.toLowerCase()];
@@ -739,35 +742,35 @@ var CASE_TITLE_OVERRIDES = {
 };
 
 var MEDIA_TITLE_OVERRIDES = {
-  "assets/img/all-images/students/20240910_154558.jpg": "Pelvis AP X-ray Case Image",
-  "assets/img/all-images/students/20250924_180400.jpg": "Lumbar Spine MRI Sagittal View",
+  "assets/img/all-images/students/20240910_154558.jpg": "MRI lumbar spine showing disc prolapse",
+  "assets/img/all-images/students/20250924_180400.jpg": "Xray pelvis with both hips showing avascular necrosis of both hips",
   "assets/img/all-images/students/img-20221223-wa0142.jpg": "Lumbar Spine MRI Axial View",
   "assets/img/all-images/students/img-20230127-wa0097.jpg": "Mini-Open Spine Incision Measurement",
-  "assets/img/all-images/students/img-20230127-wa0098.jpg": "Endoscopic Spine Procedure Monitor View",
-  "assets/img/all-images/students/img-20230127-wa0099.jpg": "Mini-Open Spine Incision with Scale",
-  "assets/img/all-images/students/img-20230127-wa0100.jpg": "Spine Surgical Exposure Before Closure",
-  "assets/img/all-images/students/img-20230127-wa0101.jpg": "Excised Disc Fragment Specimen",
+  "assets/img/all-images/students/img-20230127-wa0098.jpg": "Miniopen incision",
+  "assets/img/all-images/students/img-20230127-wa0099.jpg": "Miniopen incision",
+  "assets/img/all-images/students/img-20230127-wa0100.jpg": "Miniopen incision",
+  "assets/img/all-images/students/img-20230127-wa0101.jpg": "Monitor view endoscopy",
   "assets/img/all-images/students/img-20230127-wa0102.jpg": "Spine Wound Inspection Intraoperative",
   "assets/img/all-images/students/img-20230127-wa0105.jpg": "Post-Procedure Wound Closure with Drain",
   "assets/img/all-images/students/img-20230127-wa0113.jpg": "Resident-Assisted Spine Procedure",
   "assets/img/all-images/students/img-20230127-wa0114.jpg": "Final Skin Closure After Spine Procedure",
-  "assets/img/all-images/students/img-20240912-wa0011.jpg": "MRI Coronal View of Thoracolumbar Region",
-  "assets/img/all-images/students/img-20240912-wa0012.jpg": "MRI Axial View - Figure 4 Case",
+  "assets/img/all-images/students/img-20240912-wa0011.jpg": "MRI coronal view of thoracolumbar spine",
+  "assets/img/all-images/students/img-20240912-wa0012.jpg": "Axial view",
   "assets/img/all-images/students/img-20240912-wa0013.jpg": "Cervico-Thoracic MRI Multi-Slice Panel",
   "assets/img/all-images/students/img-20250116-wa0063.jpg": "Hip Arthrogram Fluoroscopy View",
   "assets/img/all-images/students/img-20250116-wa0071.jpg": "Hip Joint Capsule Anatomy Teaching Slide",
-  "assets/img/all-images/students/img-20250508-wa0086.jpg": "Open Tibial Fracture Debridement with External Fixator",
+  "assets/img/all-images/students/img-20250508-wa0086.jpg": "Cement spacer in defect with exfix",
   "assets/img/all-images/students/img-20250704-wa0032.jpg": "Postoperative Leg Closure with External Fixator",
-  "assets/img/all-images/students/img-20250704-wa0034.jpg": "Deep Surgical Exposure During Limb Reconstruction",
+  "assets/img/all-images/students/img-20250704-wa0034.jpg": "Deep surgical exposure during limb reconstruction by Muscular membrane technique",
   "assets/img/all-images/students/img-20250704-wa0035.jpg": "Operative Instruments and Bone Graft Table",
-  "assets/img/all-images/students/img-20250704-wa0048.jpg": "Intraoperative Fixation with Resident Assistance",
+  "assets/img/all-images/students/img-20250704-wa0048.jpg": "Bone spacer fixation in defect",
   "assets/img/all-images/students/img-20250704-wa0054.jpg": "Bone Graft Placement in Limb Reconstruction",
   "assets/img/all-images/students/img-20250704-wa0056.jpg": "Limb Reconstruction Wound Bed Exposure",
   "assets/img/all-images/students/media/website personal/students corner/rare case/aortic aneurysm causing backpain anna parit/dscn9834.jpg": "Rare Case MRI Sagittal View Showing Aortic Aneurysm",
-  "assets/img/all-images/students/media/website personal/students corner/rare case/aortic aneurysm causing backpain anna parit/dscn9835 - copy.jpg": "Rare Case Clinical Standing Photograph",
+  "assets/img/all-images/students/media/website personal/students corner/rare case/aortic aneurysm causing backpain anna parit/dscn9835 - copy.jpg": "Case standing xray",
   "assets/img/all-images/students/media/website personal/students corner/rare case/aortic aneurysm causing backpain anna parit/dscn9835.jpg": "Rare Case MRI Sagittal View with Aneurysm Detail",
   "assets/img/all-images/students/media/website personal/students corner/rare case/aortic aneurysm causing backpain anna parit/dscn9836 - copy.jpg": "Rare Case MRI Coronal View of Aneurysm",
-  "assets/img/all-images/students/media/website personal/students corner/rare case/aortic aneurysm causing backpain anna parit/dscn9837 - copy.jpg": "Rare Case MRI Close-Up of Aortic Aneurysm",
+  "assets/img/all-images/students/media/website personal/students corner/rare case/aortic aneurysm causing backpain anna parit/dscn9837 - copy.jpg": "Aortic aneurysm",
   "assets/img/all-images/students/20251120_170528.mp4": "Gait Assessment Video with Crutches",
   "assets/img/all-images/students/vid-20230127-wa0152.mp4": "Endoscopic Spine Procedure Video",
   "assets/img/all-images/students/vid-20240424-wa0044.mp4": "Endoscopic Decompression Demonstration Video",
