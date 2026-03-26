@@ -135,6 +135,7 @@
                     top: 201%;
                     width:220px;
                     left: 0;
+                    display: block;
                     background: var(--ztc-bg-bg-1);
                     padding: 12px 20px 24px;
                     opacity: 0;
@@ -554,6 +555,7 @@
                     top: 201%;
                     width:220px;
                     left: 0;
+                    display: block;
                     background: var(--ztc-bg-bg-1);
                     padding: 12px 20px 24px;
                     opacity: 0;
@@ -1299,6 +1301,15 @@
             padding: 16px 0 16px 30px;
             border-radius: 100px;
             transition: all .4s;
+            @media #{$xxl} {
+                flex-wrap: nowrap;
+            }
+            @media #{$xl} {
+                flex-wrap: nowrap;
+            }
+            @media #{$lg} {
+                flex-wrap: nowrap;
+            }
             @media #{$xs} {
                 padding: 0;
             }
@@ -1310,10 +1321,15 @@
     
     .vl-main-menu{
         & ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
             text-align: center;
             & > li{
                 display: inline-block;
                 position: relative;
+                flex: 0 0 auto;
                 .span-arrow {
                   display: flex !important;
                   align-items: center;
@@ -1333,8 +1349,9 @@
                     display: inline-block;
                     position: relative;
                     transition: .4s;
-                    padding: 0 10px;
+                    padding: 0 14px;
                     font-weight: var(--ztc-weight-medium);
+                    white-space: nowrap;
                     .arrow-size {
                         font-size: var(--ztc-font-size-font-s12);
                     }
@@ -1373,10 +1390,13 @@
                     & li{
                         margin-right: 0;
                         display: block;
+                        width: 100%;
+                        flex: none;
                         text-align: start;
                         & a{
                             color: var(--ztc-text-text-11);
-                            display: inline-block;
+                            display: block;
+                            width: 100%;
                             font-size: var(--ztc-font-size-font-s18);
                             position: relative;
                             z-index: 1;

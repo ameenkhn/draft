@@ -726,14 +726,45 @@
 .vl-footer4-section-area {
     position: relative;
     z-index: 1;
-    padding: 80px 0 32px;
+    padding: 48px 0 20px;
     overflow: hidden;
+    .space100 {
+        height: 44px;
+    }
     .footer-description-area {
-        padding: 0 30px 0 0;
+        padding: 0 24px 0 0;
+        max-width: 500px;
+        @media #{$xs} {
+            padding: 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+        @media #{$md} {
+            padding: 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .space28 {
+            height: 8px;
+        }
         img {
-            width: 200px;
-            height: 44px;
-            object-fit: cover;
+            display: block;
+            width: min(100%, 460px) !important;
+            max-width: 100% !important;
+            height: auto !important;
+            object-fit: contain;
+            background: rgba(255, 255, 255, 0.88);
+            border: 1px solid rgba(94, 138, 164, 0.18);
+            border-radius: 24px;
+            box-shadow: 0 18px 42px rgba(57, 95, 120, 0.14);
+            padding: 18px;
+            backdrop-filter: blur(6px);
+            @media #{$xs} {
+                margin: 0 auto;
+            }
+            @media #{$md} {
+                margin: 0 auto;
+            }
         }
         p {
             color: var(--ztc-text-text-11);
@@ -831,7 +862,7 @@
         h3 {
             color: var(--ztc-text-text-11);
             font-family: var(--ztc-family-font1);
-            font-size: var(--ztc-font-size-font-s24);
+            font-size: var(--ztc-font-size-font-s22);
             font-style: normal;
             font-weight: var(--ztc-weight-semibold);
             line-height: 24px;       
@@ -847,7 +878,7 @@
                     line-height: 16px; 
                     transition: all .4s;
                     display: inline-block; 
-                    padding-top: 24px;  
+                    padding-top: 18px;  
                     opacity: 70%; 
                     svg {
                         margin: 0 4px 0 0;
@@ -933,7 +964,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: 28px;
+        padding-top: 20px;
         border-top: 1px solid #D4D6DD;
         @media #{$xs} {
             display: inline-block;

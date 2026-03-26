@@ -789,6 +789,28 @@
             border-radius: 8px;
         }
     }
+    @media #{$xs} {
+        .mobile-hide-image {
+            display: none;
+        }
+    }
+    @media #{$md} {
+        .mobile-hide-image {
+            display: none;
+        }
+    }
+}
+
+@media #{$xs} {
+    .mobile-hide-image {
+        display: none !important;
+    }
+}
+
+@media #{$md} {
+    .mobile-hide-image {
+        display: none !important;
+    }
 }
 
 // Homepage 05 //
