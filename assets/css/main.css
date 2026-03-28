@@ -2872,6 +2872,13 @@ body {
 .service4-section-area .service4-slider-area.owl-carousel .owl-stage-outer {
   overflow: inherit !important;
 }
+.service4-section-area .service4-slider-area.owl-carousel .owl-stage {
+  display: flex;
+}
+.service4-section-area .service4-slider-area.owl-carousel .owl-item {
+  display: flex;
+  height: auto;
+}
 .service4-section-area .service4-slider-area .owl-dots {
   margin-top: 50px;
   position: relative;
@@ -2941,8 +2948,12 @@ body {
 .service4-section-area .service4-slider-area .service4-boxarea {
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background: var(--ztc-bg-bg-1);
   border-radius: 8px;
+  overflow: hidden;
 }
 .service4-section-area .service4-slider-area .service4-boxarea:hover .img1 img {
   transform: scale(1.1) rotate(-4deg);
@@ -2950,6 +2961,9 @@ body {
 }
 .service4-section-area .service4-slider-area .service4-boxarea .content-area {
   padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
 }
 .service4-section-area .service4-slider-area .service4-boxarea .content-area .title {
   color: var(--ztc-text-text-11);
@@ -2973,6 +2987,17 @@ body {
   font-weight: var(--ztc-weight-regular);
   line-height: 24px;
   letter-spacing: -0.16px;
+  flex: 1 1 auto;
+}
+.service4-section-area .service4-slider-area .service4-boxarea .content-area .service-copy-lead {
+  display: block;
+  margin-bottom: 8px;
+  color: #5E8AA4;
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 24px;
+  letter-spacing: -0.16px;
 }
 .service4-section-area .service4-slider-area .service4-boxarea .content-area .readmore {
   color: #5E8AA4;
@@ -2991,6 +3016,7 @@ body {
 .service4-section-area .service4-slider-area .service4-boxarea .img1 {
   position: relative;
   overflow: hidden;
+  margin-top: auto;
   border-radius: 0 0 8px 8px;
   transition: all 0.4s;
 }
