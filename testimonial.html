@@ -27,6 +27,56 @@
       .video-responsive video{position:absolute;top:0;left:0;width:100%;height:100%}
       .video-card h4{margin-top:12px;font-size:1.05rem}
       .testimonial4-boxarea p{min-height:80px}
+      .testimonial-media-card{
+        display:block;
+        height:100%;
+        padding:18px;
+        border-radius:16px;
+        background:#fff;
+        box-shadow:0 10px 30px rgba(7, 34, 92, 0.08);
+        transition:transform 0.25s ease, box-shadow 0.25s ease;
+      }
+      .testimonial-media-card:hover{
+        transform:translateY(-6px);
+        box-shadow:0 18px 38px rgba(7, 34, 92, 0.14);
+      }
+      .testimonial-media-card__image{
+        width:100%;
+        aspect-ratio:3/4;
+        object-fit:cover;
+        object-position:top center;
+        border-radius:12px;
+        background:#f5f7fb;
+      }
+      .testimonial-media-card__meta{
+        margin-top:16px;
+      }
+      .testimonial-media-card__meta h4{
+        margin:0 0 6px;
+        color:var(--ztc-text-text-11);
+        font-family:var(--ztc-family-font1);
+        font-size:22px;
+        font-weight:var(--ztc-weight-semibold);
+      }
+      .testimonial-media-card__meta p{
+        margin:0;
+        color:#5f6b84;
+        font-family:var(--ztc-family-font1);
+      }
+      .testimonial-media-card__badge{
+        display:inline-flex;
+        align-items:center;
+        margin-bottom:10px;
+        padding:6px 10px;
+        border-radius:999px;
+        background:#edf3ff;
+        color:#0c56db;
+        font-family:var(--ztc-family-font1);
+        font-size:13px;
+        font-weight:var(--ztc-weight-semibold);
+        text-transform:uppercase;
+        letter-spacing:0.04em;
+      }
     </style>
 
     <!--=====  JS SCRIPT LINK =======-->
@@ -675,6 +725,53 @@
         </div>
       </div> 
 
+</div>
+</div>
+</div>
+
+<!-- ===== IMAGE TESTIMONIALS AREA STARTS ======= -->
+<div class="videos-section-area sp1" style="padding-top:0;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 style="color:var(--ztc-text-text-11);font-family:var(--ztc-family-font1);font-size:var(--ztc-font-size-font-s50);font-weight:var(--ztc-weight-semibold);">
+          Patient Stories & Health Features
+        </h2>
+        <div class="space24"></div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <a class="testimonial-media-card" href="assets/img/all-images/works/Gemini_Generated_Image_p59ye6p59ye6p59y.png" target="_blank" rel="noopener noreferrer">
+          <img class="testimonial-media-card__image" src="assets/img/all-images/works/Gemini_Generated_Image_p59ye6p59ye6p59y.png" alt="Generated testimonial image">
+          <div class="testimonial-media-card__meta">
+            <span class="testimonial-media-card__badge">Image</span>
+            <h4>Pain Relief & Ozone Therapy</h4>
+            <p>Opens the full-size treatment information image in a new tab.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <a class="testimonial-media-card" href="assets/img/all-images/works/omkar story.docx" target="_blank" rel="noopener noreferrer">
+          <img class="testimonial-media-card__image" src="assets/img/all-images/works/omkar story.docx.png" alt="Preview thumbnail for Omkar story document">
+          <div class="testimonial-media-card__meta">
+            <span class="testimonial-media-card__badge">Document</span>
+            <h4>Omkar's Recovery Story</h4>
+            <p>Preview card linked to the original Word document.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <a class="testimonial-media-card" href="assets/img/all-images/works/WhatsApp Image 2026-03-29 at 14.11.56.jpeg" target="_blank" rel="noopener noreferrer">
+          <img class="testimonial-media-card__image" src="assets/img/all-images/works/WhatsApp Image 2026-03-29 at 14.11.56.jpeg" alt="WhatsApp testimonial image">
+          <div class="testimonial-media-card__meta">
+            <span class="testimonial-media-card__badge">Image</span>
+            <h4>Clubfoot Awareness Feature</h4>
+            <p>Opens the original newspaper-style awareness image.</p>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </div>
